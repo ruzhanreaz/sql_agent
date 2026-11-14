@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "category": "simple",
+    "question": "How many customers are there?",
+    "expected": "30",
+    "answerable": true
+  },
+  {
+    "id": 2,
+    "category": "simple",
+    "question": "How many products are listed in the products table?",
+    "expected": "20",
+    "answerable": true
+  },
+  {
+    "id": 3,
+    "category": "simple",
+    "question": "How many orders have the status 'cancelled'?",
+    "expected": "25",
+    "answerable": true
+  },
+  {
+    "id": 4,
+    "category": "join",
+    "question": "What is the total revenue (quantity * unit_price) for customer 12?",
+    "expected": "914.25",
+    "answerable": true
+  },
+  {
+    "id": 5,
+    "category": "join",
+    "question": "How many total orders were placed by customers living in Dhaka?",
+    "expected": "37",
+    "answerable": true
+  },
+  {
+    "id": 6,
+    "category": "join",
+    "question": "What is the total quantity of units sold for product id 5?",
+    "expected": "16",
+    "answerable": true
+  },
+  {
+    "id": 7,
+    "category": "grouping",
+    "question": "Which product category earned the most total revenue, and how much did it earn?",
+    "expected": "Books (31508.74)",
+    "answerable": true
+  },
+  {
+    "id": 8,
+    "category": "grouping",
+    "question": "Which city has the highest number of customers, and how many customers are there?",
+    "expected": "Khulna (11)",
+    "answerable": true
+  },
+  {
+    "id": 9,
+    "category": "grouping",
+    "question": "Which product name sold the highest total quantity of units?",
+    "expected": "Product_08 (57)",
+    "answerable": true
+  },
+  {
+    "id": 10,
+    "category": "calculation",
+    "question": "What is the average order value, and by what percentage is it above the minimum order value?",
+    "expected": "avg=841.36, min=54.28, pct_above=1450.04%",
+    "answerable": true
+  },
+  {
+    "id": 11,
+    "category": "calculation",
+    "question": "What percentage of total revenue comes from 'completed' orders?",
+    "expected": "62.77% (63370.23 / 100962.75)",
+    "answerable": true
+  },
+  {
+    "id": 12,
+    "category": "calculation",
+    "question": "What is the average price of all products in the catalog?",
+    "expected": "141.99",
+    "answerable": true
+  },
+  {
+    "id": 13,
+    "category": "multi_tool",
+    "question": "Find the total revenue from Dhaka customers and the total revenue from Sylhet customers separately, then use the calculator to find the exact difference (Dhaka minus Sylhet).",
+    "expected": "Dhaka=28902.02, Sylhet=12432.08, diff=16469.94",
+    "answerable": true
+  },
+  {
+    "id": 14,
+    "category": "multi_tool",
+    "question": "Query the total revenue for Electronics and the total revenue for Books separately, then use the calculator to find by what percentage Electronics revenue is higher than Books revenue.",
+    "expected": "Electronics=25686.0, Books=31508.74, pct=-18.48%",
+    "answerable": true
+  },
+  {
+    "id": 15,
+    "category": "unanswerable",
+    "question": "What was the total employee payroll expense in March 2025?",
+    "expected": "Cannot answer (no employee/payroll table in database)",
+    "answerable": false
+  },
+  {
+    "id": 16,
+    "category": "unanswerable",
+    "question": "Which product received the lowest average customer star rating?",
+    "expected": "Cannot answer (no ratings/reviews column or table in database)",
+    "answerable": false
+  }
+]
